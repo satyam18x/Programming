@@ -8,5 +8,5 @@ int main(){
 
     cin>>s1 >> s2;
 
-    cout<<s1 << s2;
+    cout<<s1 <<" "s2 <<endl;
 }
