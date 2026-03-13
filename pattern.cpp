@@ -39,7 +39,30 @@ void print_pattern4( int n){
         cout << endl;
     }
 }
+void print_pattern5( int n){
 
+    for (int i=0;i<n;i++){
+        for (int j=1; j<=n-i+1;j++){
+            cout << " * ";
+        }
+        cout << endl;
+    }
+}
+void print_pattern6( int n){
+
+    for (int i=0;i<n;i++){
+        for (int j=0; j<n-i-1;j++){
+            cout << " ";
+        }
+         for (int j=0; j<2*i+1;j++){
+            cout << "*";
+        }
+         for (int j=0; j<n-i-1;j++){
+            cout << " ";
+        }
+        cout << endl;
+    }
+}
 
 int main(){
            int n;
@@ -49,5 +72,7 @@ int main(){
           print_pattern2(n);
           print_pattern3(n);
           print_pattern4(n);
+          print_pattern5(n);
+          print_pattern6(n);
     return 0;
 }
