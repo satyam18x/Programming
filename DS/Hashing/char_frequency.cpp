@@ -10,7 +10,7 @@ int main()
     // precompute
     int hash[256] = {0};
     for (int i = 0; i < s.size(); i++)
-        hash[s[i]] += 1;
+        hash[s[i]] += 1;                     
 
     // query
     int q;
