@@ -19,8 +19,15 @@ void selectionSort(int arr[], int n) {
 }
 
 int main() {
-    int arr[] = {64, 25, 12, 22, 11};
-    int n = 5;
+    int n;
+    cout << "Write size of array : ";
+    cin >>n;
+
+    cout << "Write an array : ";
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin >> arr[i];
+    }
 
     selectionSort(arr, n);
 
