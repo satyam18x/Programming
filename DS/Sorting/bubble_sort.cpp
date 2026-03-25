@@ -13,10 +13,17 @@ void bubbleSort(int arr[], int n) {
 }
 
 int main() {
-    int arr[] = {5, 3, 2, 4};
-    int n = 4;
+   int n;
+    cout << "Write size of array : ";
+    cin >>n;
 
-    bubbleSort(arr, n);  // function call
+    cout << "Write an array : ";
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin >> arr[i];
+    }
+
+    bubbleSort(arr, n);
 
     // Printing inside main
     cout << "Sorted array: ";
