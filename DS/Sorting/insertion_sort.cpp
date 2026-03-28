@@ -2,16 +2,17 @@
 using namespace std;
 
 // Bubble Sort Function
-void bubbleSort(int arr[], int n) {
-    for(int i = 0; i < n - 1; i++) {
-        for(int j = 0; j < n - i - 1; j++) {
-            if(arr[j] > arr[j + 1]) {
-                swap(arr[j], arr[j + 1]);
+void insertionsort(int arr[], int n) {
+     for(int i=0;i<=n-1;i++){
+            int j=i;
+            while (j>0 && arr[j-1]<arr[j]){
+                swap(arr[j-1],arr[j]);
+                j--;
             }
         }
-    }
-}
 
+    }
+    
 int main() {
    int n;
     cout << "Write size of array : ";
@@ -23,7 +24,7 @@ int main() {
         cin >> arr[i];
     }
 
-    bubbleSort(arr, n);
+    insertionsort(arr, n);
 
     // Printing inside main
     cout << "Sorted array: ";
@@ -34,16 +35,19 @@ int main() {
     return 0;
 }
 
+
+
 // class Solution {
 // public:
-//     vector<int> bubbleSort(vector<int>& nums) {
+//     vector<int> insertionSort(vector<int>& nums) {
 
 //         int n=nums.size();
 
-//         for (int i=0;i<n-1;i++){
-//             for(int j=0;j<n-i-1;j++){
-//                 if(nums[j]>nums[j+1])
-//                 swap(nums[j],nums[j+1]);
+//         for(int i=0;i<=n-1;i++){
+//             int j=i;
+//             while (j>0 && nums[j-1]>nums[j]){
+//                 swap(nums[j-1],nums[j]);
+//                 j--;
 //             }
 //         }
 //         return nums;
