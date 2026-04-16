@@ -80,3 +80,24 @@ using namespace std;
          return -1;
     }
 
+ int main()
+{
+    int n;
+    cout << "Write size of array : ";
+    cin >> n;
+
+    cout << "Write an array : ";
+
+    vector<int> nums(n);
+    for (int i = 0; i < n; i++)
+    {
+        cin >> nums[i];
+    }
+
+
+ int result = majorityElement(nums);
+
+
+    cout << "Majority element is : " << result;
+}
+   
