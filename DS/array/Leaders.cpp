@@ -13,7 +13,8 @@ public:
         }
         maxi = max(nums[i],maxi);
       }
-      reverse(ans.begin(),ans.end());
+      reverse(ans.begin(),ans.end());  // if needed in reverse order 
+    
       return ans;
     }
 
