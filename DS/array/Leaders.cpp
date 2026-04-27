@@ -14,7 +14,7 @@ public:
         maxi = max(nums[i],maxi);
       }
       reverse(ans.begin(),ans.end());  // if needed in reverse order 
-    //   sort(ans.begin(),ans.end());   
+    //   sort(ans.begin(),ans.end());   if needed in sorted order
       return ans;
     }
 
