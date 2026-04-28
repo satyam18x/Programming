@@ -16,4 +16,15 @@ class Solution {
                 int count = 1;
     
                                        // only start if it is the beginning of sequence
-          
+                if (!linearSearch(nums, x - 1)) {
+                    while (linearSearch(nums, x + 1)) {
+                        x = x + 1;
+                        count = count + 1;
+                    }
+                    longest = max(longest, count);
+                }
+            }
+    
+            return longest;
+        }
+    };
