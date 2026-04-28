@@ -15,7 +15,7 @@ class Solution {
                 int x = nums[i];
                 int count = 1;
     
-                                       // only start if it is the beginning of sequence
+                                       // only start if it is the beginning of sequence if previous number is not present
                 if (!linearSearch(nums, x - 1)) {
                     while (linearSearch(nums, x + 1)) {
                         x = x + 1;
