@@ -30,3 +30,5 @@ class Solution {
             return longest;
         }
     };
+
+    //better solution
