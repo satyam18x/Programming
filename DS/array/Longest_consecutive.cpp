@@ -31,7 +31,7 @@ class Solution {
         }
     };
 
-    //better solution
+    //better solution -- TC = O(n log n)+o(n)
 
   class Solution {
 public:
@@ -59,3 +59,5 @@ public:
       
     }
 };
+
+//optimal solution  - TC = o(n)
