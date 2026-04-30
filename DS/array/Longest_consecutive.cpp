@@ -44,7 +44,7 @@ public:
         int longest=0;
 
         for(int i=0;i<n;i++){
-            if(nums[i]==lastSmaller){
+            if(nums[i]-1==lastSmaller){
                 count+=1;
                 lastSmaller=nums[i];
             }
