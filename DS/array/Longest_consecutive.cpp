@@ -1,7 +1,7 @@
 class Solution {
     public:
 
-    // function for linear search 
+    // function for linear search        == TC -> O(N^2)
         bool linearSearch(vector<int>& nums, int target) {
             for (int num : nums) {
                 if (num == target) return true;
@@ -60,7 +60,7 @@ public:
     }
 };
 
-//optimal solution  - TC = o(n)
+//optimal solution  - TC = o(n) 
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
