@@ -1,4 +1,4 @@
-//brute force+better
+//brute force+better -- Tc- approx O(n^2)
 class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
