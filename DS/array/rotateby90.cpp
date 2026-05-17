@@ -18,3 +18,5 @@ public:
         matrix=ans;
     }
 };
+
+//better+optimal solution
