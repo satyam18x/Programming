@@ -2,6 +2,7 @@
 class Solution {
 public:
      
+                                          //This function will genarate a single row ,whichever you want to print
      vector <int> generateRow(int row) {
      long long ans =1;
      vector <int> ansRow;
@@ -16,6 +17,8 @@ public:
         }
         return ansRow;
     }
+
+                                               //This function will print all the rows by calling the generate row function
     vector<vector<int>> generate(int numRows) {
         
         vector<vector<int>> ans;
