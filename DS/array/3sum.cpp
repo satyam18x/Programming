@@ -1,4 +1,4 @@
-//brute force
+//brute force         -- Time complexity will be more O(n^3) + log as using set, space will be o(2*no.of triplets) exciding the time limit 
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
