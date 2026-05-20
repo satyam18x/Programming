@@ -38,8 +38,8 @@ public:
 
         for(int i=0;i<n;i++){
              set<int> hashset;
-            for(int j=i+1;j<n;j++){                        
-                     int third = -(nums[i]+nums[j]);
+            for(int j=i+1;j<n;j++){                        //we are not using the third loop reducing tc from n cube to n square
+                     int third = -(nums[i]+nums[j]);            //instead we are using third variable 
                         if(hashset.find(third)!=hashset.end()){
                         vector <int> temp = {nums[i],nums[j],third};
                         sort(temp.begin(),temp.end());
