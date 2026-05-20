@@ -28,7 +28,7 @@ public:
     
 };
 
-//better solution -  TC - O(n^2) but still using set and hashmap exciding the time limit
+//better solution -  TC - O(n^2) * log but still using set and hashmap exciding the time limit
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
@@ -53,3 +53,5 @@ public:
     }
     
 };
+
+//optimal solution
