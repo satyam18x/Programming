@@ -27,3 +27,5 @@ public:
     }
     
 };
+
+//better solution -  TC - O(n^2) but still using set and hashmap exciding the time limit
