@@ -1,4 +1,4 @@
-//brute force - Tc-O(n^4)
+//brute force - Tc-O(n^4)  and SC - O(no. of quads)
 class Solution {
 public:
     vector<vector<int>> fourSum(vector<int>& nums, int target) {
@@ -30,3 +30,8 @@ public:
 
     }
 };
+
+//Better solution - TC - O(n^3) + log (m) as using hashset  and Sc - O(n) + o(no.quads)*2
+
+
+               
