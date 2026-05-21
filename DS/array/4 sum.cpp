@@ -67,4 +67,6 @@ public:
 
     }
 };
-               
+
+//optimal approach - Tc- O(n^3) and sc - O(no. of quads)
+
