@@ -1,4 +1,5 @@
-//Brute force - TC-o(n^2) , SC- O(1)
+//Brute force - TC-o(n^2) , SC- O(1)  
+//Time limit exceeded
 
 class Solution {
 public:
