@@ -22,3 +22,22 @@ public:
 };
 
 //Better TC-O(n^2)
+class Solution {
+public:
+    int maxProduct(vector<int>& nums) {
+
+        int n = nums.size();
+        int productmax = INT_MIN;
+
+        for (int i = 0; i < n; i++) {
+             int product = 1;
+            for (int j = i; j < n; j++) {
+               
+                    product = product * nums[j];
+                productmax = max(productmax, product);
+            }
+        }
+        return productmax;
+    }
+
+};
