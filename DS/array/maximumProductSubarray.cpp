@@ -1,4 +1,4 @@
-//Bruteforce - TC O(n^3)
+//Bruteforce - TC O(n^3) and sc - O(1)
 
 class Solution {
 public:
