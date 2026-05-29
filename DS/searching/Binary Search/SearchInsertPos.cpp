@@ -13,8 +13,8 @@ public:
         
     }
 };
-
-//using Binary Search
+  
+//using Binary Search TC-O(log n)
 class Solution {
 public:
     int searchInsert(vector<int>& nums, int target) {
