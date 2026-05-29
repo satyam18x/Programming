@@ -1,4 +1,4 @@
-//using Linear search
+//using Linear search TC- O(N)
 class Solution {
 public:
     int searchInsert(vector<int>& nums, int target) {
