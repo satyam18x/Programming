@@ -131,7 +131,7 @@ public:
 
         if(nums[mid]==target){
             first = mid;
-            high = mid-1;
+            high = mid-1;          //first occurence will always be on left of mid because it will be smaller, that is why we have used high=mid-1
         }
         else if(nums[mid]>target){
             high = mid-1;
@@ -156,7 +156,7 @@ public:
 
         if(nums[mid]==target){
             last=mid;
-            low=mid+1;
+            low=mid+1;                      //last occurence will always be on right of mid because it will be in greaterr index, that is why we have used low=mid+1
         }
         else if(nums[mid]>target){
             high = mid-1;
