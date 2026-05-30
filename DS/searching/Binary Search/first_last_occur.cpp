@@ -22,3 +22,5 @@ public:
         
     }
 };
+
+//Now using binary search
