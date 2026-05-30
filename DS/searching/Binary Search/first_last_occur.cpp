@@ -83,3 +83,6 @@ public:
         
     }
 };
+
+
+//Now using COmplete Binary search , without using upper and lower bound
