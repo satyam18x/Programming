@@ -21,7 +21,7 @@ public:
             if(nums[low] <= nums[mid]){                                 //checking if either left side is sorted or
 
                  if(nums[low]<=target && target <= nums[mid]){
-                    high = mid-1;
+                    high = mid-1;                                    //Right half is eliminated ,
                  }
                  else{
                     low=mid+1;
@@ -31,7 +31,7 @@ public:
             else{                                                     //right half is sorted
                 if(nums[high] >= target && target >= nums[mid]){
                     low=mid+1;
-                 }
+                 }                                                     //left half is eliminated
                  else{
                     high=mid-1;
                  }
