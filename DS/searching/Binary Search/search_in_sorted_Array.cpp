@@ -29,7 +29,7 @@ public:
 
             }
             else{                                                     //right half is sorted
-                if(nums[high] >= target && target >= nums[mid]){
+                if(nums[mid] <= target && target <= nums[high]){
                     low=mid+1;
                  }                                                     //left half is eliminated
                  else{
