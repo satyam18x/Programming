@@ -13,10 +13,11 @@ public:
         while(low<=high){
             int mid=(low+high)/2;
 
-            if(nums[mid]==target){
+            if(nums[mid]==target){                  //if found at mid, return mid
                 return mid;
             }
-            if(nums[low] <= nums[mid]){
+
+            if(nums[low] <= nums[mid]){                                 //checking if either left side is sorted or
 
                  if(nums[low]<=target && target <= nums[mid]){
                     high = mid-1;
@@ -26,7 +27,7 @@ public:
                  }
 
             }
-            else{
+            else{                                                     //right half is sorted
                 if(nums[high] >= target && target >= nums[mid]){
                     low=mid+1;
                  }
