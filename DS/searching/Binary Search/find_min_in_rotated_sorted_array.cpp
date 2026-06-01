@@ -11,3 +11,5 @@ public:
          return mini;
     }
 };
+
+//NOW USING BINARY SEARCH
