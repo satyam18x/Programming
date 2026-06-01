@@ -22,13 +22,13 @@ public:
 
         while(low<=high){
             int mid=(low+high)/2;
-            
-            if(nums[low]<=nums[mid]){
-
+                                   
+            if(nums[low]<=nums[mid]){                 //left half is sorted, and then eliminate that half after storing the minimun in ans
+  
                ans=min(ans,nums[low]); 
                 low=mid+1;
             }
-            else{
+            else{                                    //right half is sorted  
                 high = mid-1;
                 ans=min(ans,nums[mid]);
             }
