@@ -27,3 +27,4 @@ public:
         return -1;
     }
 };
+//now using binary search in O(log n)
