@@ -48,13 +48,13 @@ public:
           return nums[mid];
     
 
-       if((mid%2==1 && nums[mid] == nums[mid-1])                  
+       if((mid%2==1 && nums[mid] == nums[mid-1])                  //here comes even ,odd concept,     we are in the left half 
               || (mid % 2 == 0 && nums[mid]==nums[mid+1]))
           {
-               low=mid+1;
+               low=mid+1;           // eliminate the left half
           }
           else{
-            high = mid-1;
+            high = mid-1;            // we are in the right half , and tehn eliminate it
           }
        }
          return -1; 
