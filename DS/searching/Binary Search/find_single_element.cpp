@@ -54,7 +54,7 @@ public:
                low=mid+1;           // eliminate the left half
           }
           else{
-            high = mid-1;            // we are in the right half , and tehn eliminate it
+            high = mid-1;            // we are in the right half , and then eliminate it
           }
        }
          return -1; 
