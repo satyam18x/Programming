@@ -1,4 +1,4 @@
-//using linear search
+//using linear search   -- O(n)
 class Solution {
 public:
     int floorSqrt(int n)  {
