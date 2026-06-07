@@ -12,7 +12,7 @@ public:
     }
 };
 
-//NOW USING BINARY SEARCH
+//NOW USING BINARY SEARCH - O(log n)
 class Solution {
 public:
     int findMin(vector<int>& nums) {
