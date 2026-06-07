@@ -16,7 +16,7 @@ public:
     }
 };
 
-//using binary search
+//using binary search  -- O(log n)
 class Solution {
 public:
     int floorSqrt(int n)  {
