@@ -56,7 +56,7 @@ public:
         }
         no_of_bouq += (count/k);
 
-        if(no_of_bouq>=m)     // or just [return no_of_bouq >=m;]
+        if(no_of_bouq>=m)     // or just [return no_of_bouq >=m;] and write bool in top instead of int
          return true;
         else
          return false;
