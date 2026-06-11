@@ -16,7 +16,7 @@ public:
         }
         no_of_bouq += (count/k);
 
-        if(no_of_bouq>=m)
+        if(no_of_bouq>=m)           // or just [return no_of_bouq >=m;]
          return true;
         else
          return false;
@@ -37,3 +37,5 @@ public:
         return -1;
     }
 };
+
+//
