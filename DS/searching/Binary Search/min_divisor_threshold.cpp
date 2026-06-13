@@ -1,3 +1,5 @@
+//Brute force
+
 //optimal using binary search
 class Solution {
 public:
