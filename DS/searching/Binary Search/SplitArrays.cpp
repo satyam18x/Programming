@@ -29,3 +29,5 @@ public:
         return -1;
     }
 };
+
+//using binary search
