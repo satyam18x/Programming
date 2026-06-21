@@ -1,4 +1,4 @@
-//brute force
+//brute force - O(n+m)
 class Solution {
   public:   
   int rowWithMax1s(vector < vector < int >> & mat) {
@@ -8,7 +8,7 @@ class Solution {
 
          for(int i=0;i<n;i++){
             int count=0;
-            for(int j=i;j<n;j++){
+            for(int j=0;j<n;j++){
                    if(mat[i][j]==1)
                    count++;
             }
@@ -21,3 +21,4 @@ class Solution {
             return ans;
   }
 };
+//using Binary search
