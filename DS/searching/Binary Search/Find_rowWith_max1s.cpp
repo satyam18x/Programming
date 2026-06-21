@@ -1,4 +1,4 @@
-//brute force - O(n+m)
+//brute force - O(n*m)
 class Solution {
   public:   
   int rowWithMax1s(vector < vector < int >> & mat) {
