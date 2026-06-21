@@ -21,7 +21,7 @@ class Solution {
             return ans;
   }
 };
-//using Binary search
+//using Binary search  - O(n * log m)
 class Solution {
 public:
     int rowWithMax1s(vector<vector<int>> &mat) {
