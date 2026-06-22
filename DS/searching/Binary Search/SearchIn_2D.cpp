@@ -1,4 +1,4 @@
-//brute force - O(n*m)
+//brute force - TC- O(n*m)
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
