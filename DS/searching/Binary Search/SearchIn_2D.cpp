@@ -15,7 +15,7 @@ public:
         return false;
     }
 };  
-// optimal approach  TC- O(log m*n)
+// optimal approach  TC- O(log (n*m)) 
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
