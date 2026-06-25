@@ -1,4 +1,4 @@
-//Recursive preorder traversal
+//Recursive preorder traversal , TC-O(n)
 class Solution {
 public:
     
