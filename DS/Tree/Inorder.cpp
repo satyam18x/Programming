@@ -17,7 +17,7 @@ public:
 
     }
 };
-//Iterative - TC-O(n) , sc-O(n)
+//Iterative - TC-O(n) , sc-O(n)-worst case
 class Solution {
 public:
    
