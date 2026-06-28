@@ -1,4 +1,4 @@
-//Tc-O(n)
+//Tc-O(n)  , SC- O(n)
 class Solution {
 public:
     bool isBalanced(TreeNode* root) {
