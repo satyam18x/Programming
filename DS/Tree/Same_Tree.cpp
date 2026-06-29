@@ -7,7 +7,6 @@ public:
         if (p == NULL || q == NULL)
         return false;
 
-// Safe from here
          if (p->val != q->val)
           return false;
           
