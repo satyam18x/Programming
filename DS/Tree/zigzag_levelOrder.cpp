@@ -8,7 +8,7 @@ public:
         queue<TreeNode*> que;
         que.push(root);
 
-        int lefttoRight = true;
+        bool lefttoRight = true; 
 
         while(!que.empty()){
             int size = que.size();
