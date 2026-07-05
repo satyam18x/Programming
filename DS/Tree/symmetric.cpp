@@ -1,4 +1,5 @@
-//Tc-O(n) sc-O(h)
+//Time complexity: O(n) because we visit each node exactly once. 
+//Space complexity: O(h) where h is the height of the tree. In the worst case (skewed tree), h can be n, making the space complexity O(n).
 class Solution {
 public:
     bool isMirror(TreeNode* left, TreeNode* right){
