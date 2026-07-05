@@ -1,4 +1,4 @@
-Tc-O(n) sc-O(h)
+//Tc-O(n) sc-O(h)
 class Solution {
 public:
     bool isMirror(TreeNode* left, TreeNode* right){
