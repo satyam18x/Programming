@@ -19,3 +19,5 @@ public:
        return maxlen;
     }
 };
+
+//Tc - O(n) sc-O(256) == O(1)
