@@ -1,4 +1,5 @@
 //Longest substring without duplicate chaarcters
+//TC-O(N^2) SC-O(256)
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
