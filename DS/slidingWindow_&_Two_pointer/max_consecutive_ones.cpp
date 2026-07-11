@@ -1,4 +1,4 @@
-//tc-O(n^2)
+//tc-O(n^2) 
 class Solution {
 public:
     int longestOnes(vector<int>& nums, int k) {
@@ -23,7 +23,7 @@ public:
         return maxlen;
     }
 };
-// sliding window - O(n)
+// sliding window - O(n)  optimal approach
 class Solution {
 public:
     int longestOnes(vector<int>& nums, int k) {
