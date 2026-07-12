@@ -1,4 +1,4 @@
-TC- O(h) + O(n) + O(h) == O(n)
+Tc - O(h) + O(n) + O(h) == O(n)
 
 class Solution {
   public:
@@ -58,4 +58,3 @@ class Solution {
         
         return res;
     }
-};
