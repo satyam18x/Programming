@@ -1,5 +1,4 @@
-//Tc - O(h) + O(n) + O(h) == O(n)
-
+//Tc- O(h) + O(n) + O(h) == O(n)
 class Solution {
   public:
     bool isLeaf(Node* root){
