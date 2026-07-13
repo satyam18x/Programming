@@ -1,4 +1,4 @@
-//TC -O(n), SC-O(n)
+//TC -O(n) and SC-O(n)
 class Solution {
 public:
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
