@@ -1,4 +1,4 @@
-//Longest Repeating character Replacement
+Longest Repeating character Replacement
 
 class Solution
 public:
