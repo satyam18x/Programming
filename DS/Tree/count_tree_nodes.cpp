@@ -1,4 +1,4 @@
-//TC-O(n)
+//TC-O(n) SC
 class Solution {
 public:
 
