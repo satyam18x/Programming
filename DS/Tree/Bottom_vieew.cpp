@@ -1,4 +1,4 @@
-//TC- O(n)
+//TC- O(n) // sc
 class Solution {
   public:
     vector<int> bottomView(Node *root) {
