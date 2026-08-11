@@ -1,4 +1,4 @@
-//Brute For
+//Brute Fo
 class Solution {
 public:
     int findKthPositive(vector<int>& arr, int k) {
