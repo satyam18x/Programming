@@ -21,7 +21,7 @@ public:
   
 };
 
-//optimal using binary searc
+//optimal using binary sear
 class Solution {
 public:
 
