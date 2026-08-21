@@ -66,28 +66,31 @@ class Solution {
 
 //optimal solution  - TC = o(n) 
 class Solution {
-public:
-    int longestConsecutive(vector<int>& nums) {
-        unordered_set<int> st(nums.begin(), nums.end());
-
-        int longest = 0;
-
-        for(auto num : st) {
-            // check if it's the start of a sequence
-            if(st.find(num - 1) == st.end()) {
-                int currentNum = num;
-                int count = 1;
-
-                // expand the sequence
-                while(st.find(currentNum + 1) != st.end()) {
-                    currentNum++;
-                    count++;
-                }
-
-                longest = max(longest, count);
-            }
-        }
-
-        return longest;
-    }
+	public:
+	int longestConsecutive(vector<int>& arr) {
+		
+		int n = arr.size();
+		unordered_set <int> st;
+		int longest = 1;
+		
+		for(int i=0;i<n;i++){
+		    st.insert(arr[i]);
+		}
+		
+		for(auto it : st){
+		    if(st.find(it-1)==st.end()){
+		       int count=1;
+		       int x =it;
+		       
+		       while(st.find(x+1)!=st.end()){
+		           count++;
+		           x++;
+		       }
+		       longest = max(longest,count);
+		    }
+		    
+		}
+		 return longest;
+	}
+	
 };
