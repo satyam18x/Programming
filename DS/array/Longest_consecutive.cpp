@@ -1,35 +1,33 @@
 class Solution {
-    public:
-
-    // function for linear search        == TC -> O(N^2)
-        bool linearSearch(vector<int>& nums, int target) {
-            for (int num : nums) {
-                if (num == target) return true;
+  public:
+  
+  bool ls(vector<int>& arr, int x){
+      for(int i=0;i<arr.size();i++){
+          if(arr[i]==x)
+          return true;
+      }
+      return false;
+  }
+    int longestConsecutive(vector<int>& arr) {
+        
+        int n=arr.size();
+        int longest = 0;
+        
+        
+        for(int i=0;i<n;i++){
+          int  x=arr[i];
+           int count = 1;
+            
+            while(ls(arr,x+1)==true){
+                x++;
+                count++;
             }
-            return false;
+            longest=max(longest,count);
         }
-    
-        int longestConsecutive(vector<int>& nums) {
-            int longest = 0;
-            int n = nums.size();
-    
-            for (int i = 0; i < n; i++) {
-                int x = nums[i];
-                int count = 1;
-    
-                                       // only start if it is the beginning of sequence if previous number is not present
-                if (!linearSearch(nums, x - 1)) {
-                    while (linearSearch(nums, x + 1)) {
-                        x = x + 1;
-                        count = count + 1;
-                    }
-                    longest = max(longest, count);
-                }
-            }
-    
-            return longest;
-        }
-    };
+        
+       return longest; 
+    }
+};
 
     //better solution -- TC = O(n log n)+o(n)
 
