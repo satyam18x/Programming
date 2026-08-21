@@ -1,3 +1,4 @@
+//TC- o(n) * O(n) = O(n^2)
 class Solution {
   public:
   
