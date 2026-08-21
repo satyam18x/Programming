@@ -64,7 +64,7 @@ class Solution {
 };
 
 
-//optimal solution  - TC = o(n) 
+//optimal solution  - TC = o(1) in avg and best case , and o(n) in worst case which is very rare 
 class Solution {
 	public:
 	int longestConsecutive(vector<int>& arr) {
