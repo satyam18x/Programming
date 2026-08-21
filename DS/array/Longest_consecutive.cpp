@@ -32,32 +32,37 @@ class Solution {
 
     //better solution -- TC = O(n log n)+o(n)
 
-  class Solution {
-public:
-     int longestConsecutive(vector<int>& nums) {
-     if(nums.size()==0) return 0;
-      sort(nums.begin(),nums.end());
-        int n=nums.size();
-        int count=0;
-        int lastSmaller=INT_MIN;
-        int longest=0;
-
-        for(int i=0;i<n;i++){
-            if(nums[i]-1==lastSmaller){
-                count+=1;
-                lastSmaller=nums[i];
-            }
-            else if (lastSmaller!=nums[i]){
-                count=1;
-                lastSmaller=nums[i];
-             }
-             longest=max(longest,count);
-        }
-
-        return longest;
-      
-    }
+ class Solution {
+	public:
+	int longestConsecutive(vector<int>& arr) {
+		
+		int n = arr.size();
+		int longest = 1;
+		int lastSmaller = INT_MIN;
+		int count = 0 ;
+		sort(arr.begin(), arr.end());
+		
+		for (int i = 0; i<n; i++) {
+		    
+		    if(arr[i] == lastSmaller){
+		        continue;
+		    }
+			else if (arr[i]-1 == lastSmaller) {
+				count++;
+				lastSmaller = arr[i];
+			}
+			else {
+				count = 1;
+				lastSmaller = arr[i];
+			}
+			longest = max(longest, count);
+		}
+		
+		return longest;
+	}
+	
 };
+
 
 //optimal solution  - TC = o(n) 
 class Solution {
