@@ -1,4 +1,4 @@
-//brute force - Tc-O(n log n) +O(2n) , SC- O(n)
+//brute force - Tc-O(n log n) +O(2n),SC- O(n)
 class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
