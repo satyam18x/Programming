@@ -1,4 +1,5 @@
 //run time polymorphism
+//using virtual function and method overriding
 class Animal {
 public:
     virtual void sound() {
@@ -19,4 +20,3 @@ public:
         cout << "Cat meows";
     }
 };
-
