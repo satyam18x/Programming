@@ -1,0 +1,25 @@
+
+#include <iostream>
+using namespace std;
+
+class vehicle{
+
+    public :
+     virtual void start() = 0;
+};
+
+class car : public vehicle{
+
+    public :
+    void start(){
+        cout << "Car started" << endl;
+    }
+};
+
+int main(){
+
+    car c;
+    c.start();
+
+    return 0;
+}
