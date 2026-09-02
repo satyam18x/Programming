@@ -58,7 +58,6 @@ class Task{
             cout << "This task is of low priority." << endl;
         }
     }
-    
 
 };
 
