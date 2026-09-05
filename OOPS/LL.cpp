@@ -7,22 +7,22 @@ class LL {
     int data;
     LL* next;
 
-    // void insert( LL* head, int value){
-    //     LL* newNode = new LL();
-    //     newNode->data = value;
-    //     newNode->next = NULL;
+    void insert( LL* head, int value){
+        LL* newNode = new LL();
+        newNode->data = value;
+        newNode->next = NULL;
 
-    //     if(head == NULL){
-    //         head = newNode;
-    //     }
-    //     else{
-    //         LL* temp = head;
-    //         while(temp->next != NULL){
-    //             temp = temp->next;
-    //         }
-    //         temp->next = newNode;
-    //     }
-    // }
+        if(head == NULL){
+            head = newNode;
+        }
+        else{
+            LL* temp = head;
+            while(temp->next != NULL){
+                temp = temp->next;
+            }
+            temp->next = newNode;
+        }
+    }
 
      
 
