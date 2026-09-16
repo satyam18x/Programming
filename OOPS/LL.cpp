@@ -22,10 +22,7 @@ class LL {
             }
             temp->next = newNode;
         }
-    }
-
-     
-
+    }   
 };
 
 int main(){
